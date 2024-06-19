@@ -1,0 +1,35 @@
+@import 'mapas.less';
+@import 'var.less';
+@import 'reset.less';
+
+.displayFlex{
+    display: flex;
+}
+
+header {
+    background-color: #colors[corHeader];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container{
+        .displayFlex();
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+
+    .menu {
+        .displayFlex();
+
+        li{
+            font-weight: bold;
+            margin-left: 24px;
+
+            a{
+                color: @corText;
+                text-decoration: none; 
+            }
+        }
+    }
+}
